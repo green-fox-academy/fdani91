@@ -1,0 +1,52 @@
+body {
+	font: consolas;
+	margin: auto;
+   }
+
+.header {
+	width: 100%;
+	background-color: grey;
+	background-size: cover;
+	height: 60px;
+	margin: 20p auto;
+}
+
+.article {
+	border: 1px solid;
+	max-width: 1000px;
+	min-height: 150px;
+	margin: 10px 0px;
+	word-wrap: break-word;
+	overflow: scroll;
+	max-height: 150px;
+}
+
+#title {
+	padding: 10px 10%;
+}
+
+h1 {
+	margin: 0;
+}
+
+#main-content {
+	padding: 0 10%;
+}
+
+.article h2, p {
+	margin: 5px 0;
+}
+
+#main-content h3 {
+	font-weight: normal;
+	margin: 0px auto;
+}
+
+h4 {
+	margin-bottom: 3px;
+}
+
+#contentbox {
+	min-width: 1000px;
+	min-height: 100px;
+}
