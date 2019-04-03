@@ -1,5 +1,7 @@
-[git-lesson-repository LINK](../git-lesson-repository/)
+MY GIT REPOS:
 
-[HELLO WORLD LINK](../hellow-world/readme.txt)
+[git-lesson-repository LINK](https://github.com/fdani91/git-lesson-repository)
 
-[pAtChWoRK LiNK](../patchwork/index.html)
+[HELLO WORLD LINK](https://github.com/fdani91/hello-world)
+
+[pAtChWoRK LiNK](https://github.com/fdani91/patchwork)
