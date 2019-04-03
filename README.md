@@ -5,3 +5,5 @@ MY GIT REPOS:
 [HELLO WORLD LINK](https://github.com/fdani91/hello-world)
 
 [pAtChWoRK LiNK](https://github.com/fdani91/patchwork)
+
+[SYLLABuS OTTERS](https://github.com/green-fox-academy/otters-syllabus/wiki)
