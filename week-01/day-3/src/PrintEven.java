@@ -3,9 +3,9 @@ public class PrintEven {
 
         // Create a program that prints all the even numbers between 0 and 500
 
-        int b = 0;
+        int b = 2;
 
-        while (b <= 500) {
+        while (b < 500) {
             System.out.println(b);
             b = b + 2;
         }
