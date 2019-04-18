@@ -18,22 +18,16 @@ public class TelephoneBook {
         List<String> allKeys = new ArrayList<>();
 
         String value = "307-687-2982";
-        for (String key : book.keySet())
-        {
-            if (book.get(key).equals(value))
-            {
+        for (String key : book.keySet()) {
+            if (book.get(key).equals(value)) {
                 allKeys.add(key);
             }
         }
         System.out.println("phone number: 307-687-2982 belongs to: " + allKeys);
 
-        if (book.containsKey("Chris E. Myers"))
-        {
+        if (book.containsKey("Chris E. Myers")) {
             System.out.println("We know Chris E. Myers' phone number");
-            System.out.println("We know Chris E. Myers' phone number");
-            System.out.println("We know Chris E. Myers' phone number");
-        }
-        else {
+        } else {
             System.out.println("We don't know Chris E. Myers' phone number");
         }
     }

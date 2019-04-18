@@ -1,3 +1,5 @@
+package Blog;
+
 import java.util.Date;
 
 public class BlogPost {

@@ -19,16 +19,16 @@ public class DrawDiagonal {
         Scanner scanner = new Scanner(System.in);
         int userInput =  scanner.nextInt();
 
-        for (int r = 0; r < userInput; r++) {
+        for (int r = 1; r <= userInput; r++)
+        {
 
             // Loop denoting columns
-            for (int c = 0; c < userInput; c++) {
-
+            for (int c = 1; c <= userInput; c++)
+            {
                 // Checking boundary conditions
                 // and main diagonal and
                 // secondary diagonal conditions
-                if (r == 0 || c == 0 || r == c
-                        || r == userInput - 1 || c == userInput - 1)
+                if (r == 1 || c == 1 || r == c || r == userInput || c == userInput)
                     System.out.print("%");
                 else
                     System.out.print(" ");

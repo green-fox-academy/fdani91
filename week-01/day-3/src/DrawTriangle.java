@@ -16,11 +16,11 @@ public class DrawTriangle {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("please input a number");
-        int how_many = scanner.nextInt();
+        int userInput1 = scanner.nextInt();
 
-        for (int a = 1; a <= how_many; a++)
+        for (int row = 1; row <= userInput1; row++)
         {
-            for (int b = 1; b <= a; b++)
+            for (int column = 1; column <= row; column++)
             {
                 System.out.print("*");
             }
