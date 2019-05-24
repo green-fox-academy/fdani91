@@ -24,9 +24,9 @@ public class FoxService {
     foxes.add(fox);
   }
 
-  public Fox getCurrentFox(String fox) {
+  public Fox getCurrentFox(String name) {
       Optional<Fox> storedFox = foxes.stream()
-              .filter(f -> f.getName().equals(fox))
+              .filter(f -> f.getName().equals(name))
               .findFirst();
 
       return storedFox.get();
