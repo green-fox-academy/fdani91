@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Thymeleaf Exercise #</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <meta charset="utf-8"/>
 </head>
 <body>
-$END$
+
+    <span th:text="${simba.name}"></span>
+    <span th:text="${#numbers.formatDecimal(simba.balance, 1, 2, 'POINT')} + ' Forint'"></span>
+
 </body>
 </html>

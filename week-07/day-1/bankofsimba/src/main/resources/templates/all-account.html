@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:color="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Thymeleaf Exercise #</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <meta charset="utf-8"/>
 </head>
 <body>
-$END$
+
+<table>
+    <thead>
+    <th>Index</th>
+    <th>King</th>
+    <th>Name</th>
+    <th>Balance</th>
+    <th>Animal Type</th>
+    <th>Good or Bad</th>
+    </thead>
+    <tbody th:each="bankAccount : ${bankAccountList}">
+      <tr>
+        <td th:text="${bankAccountStat.index + 1}"></td>
+        <td th:text="${bankAccount.king}" th:if="${bankAccount.king == true}" style="color: #ffe200"></td>
+        <td th:text="${bankAccount.king}" th:unless="${bankAccount.king == true}"></td>
+        <td th:text="${bankAccount.name}"></td>
+        <td th:text="${#numbers.formatDecimal(bankAccount.balance,1,2,'POINT')}"></td>
+        <td th:text="${bankAccount.animalType}"></td>
+        <td th:text="${bankAccount.good ? 'Good Guy' : 'Bad Guy'}"></td>
+      </tr>
+    </tbody>
+</table>
+
 </body>
 </html>

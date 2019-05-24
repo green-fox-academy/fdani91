@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <title></title>
 </head>
-<body>
-$END$
+<body th:bgcolor="${randomColor}">
+    <a href="/useful">Homepage</a>
+    <br>
+    <a href="/useful/colored">Colored Background</a>
+    <br>
+    <a href="/useful/email?email=is@this.valid">Email</a>
+    <br>
+    <p th:if="${email} != null" th:text="${emailValidation} ?
+    ${email} + ' is a valid email address' :
+    ${email} + ' is not a valid email address' "></p>
+    <a href="/useful/encoder?text=example&number=1">Encoder</a>
+    <br>
+    <a href="/useful/decoder?text=fybnqmf&number=1">Decoder</a>
+
+    <p th:text="${encoder}"></p>
+    <p th:text="${decoder}"></p>
 </body>
 </html>
