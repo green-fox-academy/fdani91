@@ -20,7 +20,7 @@ public class FoxService {
     if (foxes.stream().anyMatch(f -> f.getName().equals(name))) {
       throw new Exception("Fox already exists!");
     }
-    Fox fox = new Fox(name, null, null, null);
+    Fox fox = new Fox(name, "pizza", "beer");
     foxes.add(fox);
   }
 
