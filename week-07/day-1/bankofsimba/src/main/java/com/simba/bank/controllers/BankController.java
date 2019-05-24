@@ -55,7 +55,7 @@ public class BankController {
     return "form";
   }
 
-  @PostMapping("/post")
+  @PostMapping("/all-account/post")
   public String raiseBalance() {
     for (BankAccount account : bankAccountList) {
       if (account.isKing()) {
