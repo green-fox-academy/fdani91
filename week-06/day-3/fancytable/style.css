@@ -1,0 +1,40 @@
+body {
+	background-color: dodgerblue;
+}
+
+table {
+	width: 50%;
+	border-collapse: collapse;
+	font-family: Arial;
+}
+
+th {
+	background-color: black;
+	color: white;
+	text-align: left;
+    font-weight: 10;
+}
+
+tbody tr:nth-child(odd) {
+    background: #eee;
+}
+  
+tbody tr:nth-child(even) {
+    background: #fff;
+}
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+    width: 50%;
+  }  
+
+  td {
+    border: solid gray;
+    border-width: 1px 1px 0px 0px;
+    color: gray;
+}
+
+th {
+	border-bottom: 5px solid gray;
+}
