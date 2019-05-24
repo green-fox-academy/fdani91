@@ -7,7 +7,7 @@
 </head>
 <body>
     <ul>
-        <li><a href="/">Information</a></li>
+        <li><a th:href="| /?name=${fox.name} |">Information</a></li>
     </ul>
     <img alt="Fox" src="/greenfox.png">
     <p  th:text="|This is ${fox.name}. Currently living on ${fox.getFood()} and ${fox.getDrink()}. He/She knows ${fox.getTricks().size()} tricks. |"></p>
